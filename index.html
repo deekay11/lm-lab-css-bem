@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat'
+            rel='stylesheet'>
+        <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    </head>
 
-<body>
-    <h1 class=" title">BEM Wars</h1>
-    <div class="container">
-        <div class="card card--dark">
-            <h2 class="card__title">The Dark Side</h2>
-            <img src="./images/vader.jpeg" alt="Darth Vader" class="card__image">
-            <p class="card__text">Nesting!</p>
-            <p class="card__text">Conflict!</p>
-            <p class="card__text">Specificity Wars!</p>
-            <p class="card__text">Cookies</p>
-        </div>
+    <body>
+        <h1 class="title">BEM Wars</h1>
+        <div class="container">
+            <div class="card card--dark">
+                <h2 class="card__title">The Dark Side</h2>
+                <img src="./images/vader.jpeg" alt="Darth Vader"
+                    class="card__image">
+                    <div class="card__content">
+                <p class="card__text">Nesting!</p>
+                <p class="card__text">Conflict!</p>
+                <p class="card__text">Specificity Wars!</p>
+                <p class="card__text">Cookies</p>
+                </div>
+                <button class="card__button card__button--danger">Join the Dark
+                    Side</button>
+            </div>
 
-        <div class="card">
-            <h2 class="card__title">The Force</h2>
-            <img src="./images/yoda.jpeg" alt="Yoda" class="card__image">
-            <p class="card__text">Love</p>
-            <p class="card__text">Beauty</p>
-            <p class="card__text">CSS that Scales!</p>
-            <p class="card__text">Great warrior. Wars not make one great!</p>
-        </div>
-    </div>
+            <div class="card card--purple">
+                <h2 class="card__title">The Force</h2>
+                <img src="./images/yoda.jpeg" alt="Yoda" class="card__image">
+                <div class="card__content">
+                    <p class="card__text">Love</p>
+                    <p class="card__text">Beauty</p>
+                    <p class="card__text">CSS that Scales!</p>
+                    <p class="card__text">Great warrior. Wars not make one
+                        great!</p>
+                </div>
+                <button class="card__button card__button--success">Join The Force</button>
+            </div>
+            <div class="card card--turquorise">
+                <h2 class="card__title">The Dance</h2>
+                <img src="./images/break-dance.png" alt="Break dance"
+                    class="card__image">
+                <div class="card__content">
+                    <p class="card__text">Harmony</p>
+                    <p class="card__text">Balance</p>
+                    <p class="card__text">Simplicity</p>
+                    <p class="card__text">In Tune with Nature</p>
+                </div>
+                <button class="card__button card__button--light">Join the
+                    Dance</button>
+            </div>
 
-    </div>
-</body>
+            <div class="card card--yellow">
+                <h2 class="card__title">The Leggo Tree</h2>
+                <img src="./images/lego-tree.png" alt="Lego Tree"
+                    class="card__image">
+                <div class="card__content">
+                    <p class="card__text">Wisdom</p>
+                    <p class="card__text">Knowledge</p>
+                    <p class="card__text">Peace</p>
+                    <p class="card__text">Meditation</p>
+                    <button class="card__button card__button--primary">Join the
+                        Leggo</button>
+                </div>
+            </div>
+        </body>
 
-</html>
+    </html>
